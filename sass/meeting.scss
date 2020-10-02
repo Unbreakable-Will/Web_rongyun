@@ -1,6 +1,12 @@
 @import "./commont";
 
 .top {
-  height: 100px;
+  height: 61px;
   background-color: red;
+  border-bottom: 1px solid #ced0d2;
+  .conente {
+    text-align: center;
+    line-height: 61px;
+    font-size: 21px;
+  }
 }

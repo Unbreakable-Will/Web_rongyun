@@ -174,6 +174,13 @@
       "unicode_decimal": 59357
     },
     {
+      "icon_id": "1441947",
+      "name": "下拉",
+      "font_class": "xiala",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
       "icon_id": "1471079",
       "name": "表情",
       "font_class": "biaoqing-xue",
@@ -321,6 +328,13 @@
       "unicode_decimal": 59044
     },
     {
+      "icon_id": "6112385",
+      "name": "下拉",
+      "font_class": "xiala-",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
       "icon_id": "6584496",
       "name": "关闭",
       "font_class": "guanbi1",
@@ -333,6 +347,13 @@
       "font_class": "quanping1",
       "unicode": "e605",
       "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "7147175",
+      "name": "下拉",
+      "font_class": "jiantou",
+      "unicode": "e614",
+      "unicode_decimal": 58900
     },
     {
       "icon_id": "7162367",
@@ -499,8 +520,15 @@
       "icon_id": "11937081",
       "name": "视频",
       "font_class": "shipin2",
-      "unicode": "e614",
-      "unicode_decimal": 58900
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "12175543",
+      "name": "下拉",
+      "font_class": "xiala1",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
     },
     {
       "icon_id": "12290473",
