@@ -694,11 +694,6 @@ body {
   min-width: 1280px;
 }
 
-.box {
-  min-width: 1280px;
-  max-width: 1920px;
-}
-
 .top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -744,11 +739,10 @@ body {
 }
 
 .main .left .left-top {
-  width: 7.5rem;
+  width: 7.60417rem;
   height: 0.20833rem;
   border: 0.00521rem solid #ced0d2;
   background-color: #edeff2;
-  margin: 0 auto;
 }
 
 .main .left .left-top .icon {
@@ -809,7 +803,6 @@ body {
 .main .left .left-center .bottom-key {
   height: 0.46875rem;
   width: 7.60417rem;
-  background-color: pink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -818,16 +811,56 @@ body {
           align-items: center;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 
-.main .left .left-center .bottom-key .key {
-  float: left;
+.main .left .left-center .bottom-key .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5.15625rem;
+  height: 0.39062rem;
+}
+
+.main .left .left-center .bottom-key .box i {
+  margin-top: 0.05208rem;
+  margin-left: -30px;
+  width: 0rem;
+  height: 0rem;
+  border: 0.02604rem solid #000;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+.main .left .left-center .bottom-key .box .key {
   width: 0.52083rem;
   height: 0.39062rem;
-  background-color: skyblue;
+  font-size: 12px;
+  margin-left: 50px;
+}
+
+.main .left .left-center .bottom-key .box .key .text {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+.main .left .left-center .bottom-key .box .key span {
+  margin-left: 30px;
+  display: block;
+  font-size: 0.13542rem;
+}
+
+.main .left .left-center .bottom-key .end {
+  margin-left: 1.5625rem;
+  width: 0.57292rem;
+  height: 0.26042rem;
+  border: 1px solid #ff5151;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 0.26042rem;
+  font-weight: bold;
+  color: #ff5151;
 }
 
 .main .right {
@@ -838,6 +871,7 @@ body {
 }
 
 .main .right .top {
+  width: 2.39583rem;
   height: 0.23438rem;
   background-color: #f6f6f6;
   border-top: 0.00521rem solid #ced0d2;
@@ -849,14 +883,14 @@ body {
 
 .main .right .center {
   height: 3.16667rem;
-  width: 100%;
+  width: 2.39583rem;
   background-color: #fff;
   border-bottom: 0.00521rem solid #e5e5e5;
 }
 
 .main .right .bottom {
   height: 1.25rem;
-  width: 100%;
+  width: 2.39583rem;
 }
 
 .main .right .bottom .bottom-top {

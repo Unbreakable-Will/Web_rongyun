@@ -36,11 +36,10 @@ body {
 
     float: left;
     .left-top {
-      width: 1440rem / $bastfont;
+      width: 1460rem / $bastfont;
       height: 40rem / $bastfont;
       border: 1rem / $bastfont solid #ced0d2;
       background-color: #edeff2;
-      margin: 0 auto;
       .icon {
         width: 30rem / $bastfont;
         height: 30rem / $bastfont;
@@ -88,16 +87,64 @@ body {
       .bottom-key {
         height: 90rem / $bastfont;
         width: 1460rem / $bastfont;
-        background-color: pink;
+        // background-color: pink;
         display: flex;
         align-items: center;
         align-self: flex-end;
-        justify-content: flex-start;
-        .key {
-          float: left;
-          width: 100rem / $bastfont;
+        // justify-content: flex-start;
+        .box {
+          display: flex;
+          width: 990rem / $bastfont;
           height: 75rem / $bastfont;
-          background-color: skyblue;
+          //   justify-content: center;
+          //   background-color: red;
+          //   justify-content: space-evenly;
+          i {
+            margin-top: 10rem / $bastfont;
+            margin-left: -30px;
+            width: 0rem / $bastfont;
+            height: 0rem / $bastfont;
+            border: 5rem / $bastfont solid #000;
+            // border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-top-color: transparent;
+          }
+          .key {
+            //  flex:1;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            width: 100rem / $bastfont;
+            height: 75rem / $bastfont;
+            // background-color: skyblue;
+            font-size: 12px;
+            margin-left: 50px;
+            .text {
+              text-align: center;
+              margin-top: 10px;
+              margin-left: -10px;
+            }
+            span {
+              // margin: 0 auto;
+              margin-left: 30px;
+              //   margin-top: 10px;
+              display: block;
+              font-size: 26rem / $bastfont;
+              // font-size: 26px;
+            }
+          }
+        }
+        .end {
+          margin-left: 300rem / $bastfont;
+          width: 110rem / $bastfont;
+          height: 50rem / $bastfont;
+          border: 1px solid #ff5151;
+          border-radius: 5px;
+          text-align: center;
+          line-height: 50rem / $bastfont;
+          font-weight: bold;
+          color:#ff5151 ;
         }
       }
     }
@@ -109,6 +156,7 @@ body {
     font-size: 21rem / $bastfont;
 
     .top {
+      width: 460rem / $bastfont;
       height: 45rem / $bastfont;
       background-color: #f6f6f6;
       border-top: 1rem / $bastfont solid #ced0d2;
@@ -119,13 +167,13 @@ body {
     }
     .center {
       height: 608rem / $bastfont;
-      width: 100%;
+      width: 460rem / $bastfont;
       background-color: #fff;
       border-bottom: 1rem / $bastfont solid #e5e5e5;
     }
     .bottom {
       height: 240rem / $bastfont;
-      width: 100%;
+      width: 460rem / $bastfont;
       .bottom-top {
         height: 45rem / $bastfont;
         .top-text {
