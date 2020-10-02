@@ -690,6 +690,15 @@ body {
 }
 
 .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 61px;
   background-color: #fafafa;
 }
@@ -699,10 +708,17 @@ body {
   line-height: 61px;
   font-size: 21px;
 }
-<<<<<<< HEAD
 
 .main {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 855px;
   border-bottom: 1px solid #dedede;
@@ -772,14 +788,26 @@ body {
   width: 100%;
   height: 815px;
   background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main .left .left-center .bottom-key {
   height: 90px;
   width: 1460px;
   background-color: pink;
-  position: absolute;
-  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .main .left .left-center .bottom-key .key {
@@ -869,5 +897,3 @@ body {
   font-size: 12px;
 }
 /*# sourceMappingURL=meeting.css.map */
-=======
->>>>>>> f5bb9ed8c504298f7fc9c84d54c96ac602974561

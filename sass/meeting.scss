@@ -1,6 +1,9 @@
 @import "./commont";
 
 .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 61px;
   background-color: #fafafa;
   //   border-bottom: 1px solid #ced0d2;
@@ -11,7 +14,9 @@
   }
 }
 .main {
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 855px;
   //   float: left;
@@ -70,18 +75,21 @@
       width: 100%;
       height: 815px;
       background-color: #fafafa;
-      .bottom-key{
-          height: 90px;
-          width:1460px;
-          background-color: pink;
-          position: absolute;
-          bottom: 0;
-          .key{
-              float: left;
-              width: 100px ;
-              height: 75px;
-              background-color: skyblue;
-          }
+      display: flex;
+      .bottom-key {
+        height: 90px;
+        width: 1460px;
+        background-color: pink;
+        display: flex;
+        align-items: center;
+        align-self: flex-end;
+        justify-content: flex-start;
+        .key {
+          float: left;
+          width: 100px;
+          height: 75px;
+          background-color: skyblue;
+        }
       }
     }
   }
@@ -151,7 +159,7 @@
           width: 463px;
           height: 155px;
           border: none;
-          outline:none;
+          outline: none;
           font-size: 12px;
         }
       }
