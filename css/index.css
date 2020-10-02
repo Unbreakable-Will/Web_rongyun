@@ -370,6 +370,11 @@
   content: "\e637";
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 article,
 aside,
 details,

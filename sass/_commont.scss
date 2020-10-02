@@ -380,7 +380,9 @@
 // 字体图标引入结束
 
 //  初始化文件开始
-
+* {
+  box-sizing: border-box;
+}
 article,
 aside,
 details,
