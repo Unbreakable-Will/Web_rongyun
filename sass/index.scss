@@ -1,5 +1,14 @@
 @import "commont";
 
-div {
-    color: red;
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-box {
+    width: 100%;
+    height: 100%;
+    background: url(../img/y-milky-way-2695569_1280.jpg) repeat-x;
 }
