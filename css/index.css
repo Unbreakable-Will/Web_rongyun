@@ -685,8 +685,7 @@ li {
 }
 
 body {
-  min-width: 1000px;
-  min-height: 600px;
+  min-width: 1280px;
 }
 
 html,
@@ -743,3 +742,4 @@ body {
 .boxcenter .join span, .boxcenter .invite span {
   color: #0079fe;
 }
+/*# sourceMappingURL=index.css.map */
