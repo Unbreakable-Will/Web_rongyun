@@ -69,10 +69,10 @@ body {
         margin-right: 10rem / $bastfont;
         width: 75rem / $bastfont;
         height: 30rem / $bastfont;
+        font-size: 21rem / $bastfont;
       }
       .right1:hover {
         background-color: #edeff2;
-        font-size: 21rem / $bastfont;
       }
       .right2 {
         float: right;
@@ -100,8 +100,9 @@ body {
           //   background-color: red;
           //   justify-content: space-evenly;
           i {
-            margin-top: 10rem / $bastfont;
-            margin-left: -30px;
+              margin-top: 16rem / $bastfont;
+              margin-left: -26rem / $bastfont;
+              margin-right: 26rem / $bastfont;
             width: 0rem / $bastfont;
             height: 0rem / $bastfont;
             border: 5rem / $bastfont solid #000;
@@ -115,19 +116,21 @@ body {
             // display: flex;
             // justify-content: center;
             // align-items: center;
+
             width: 100rem / $bastfont;
             height: 75rem / $bastfont;
             // background-color: skyblue;
-            font-size: 12px;
-            margin-left: 50px;
+            font-size: 12rem / $bastfont;
+            // margin-left: 50rem / $bastfont;
+
             .text {
               text-align: center;
-              margin-top: 10px;
-              margin-left: -10px;
+              margin-top: 10rem / $bastfont;
+              margin-left: -10rem / $bastfont;
             }
             span {
               // margin: 0 auto;
-              margin-left: 30px;
+              margin-left: 30rem / $bastfont;
               //   margin-top: 10px;
               display: block;
               font-size: 26rem / $bastfont;
@@ -144,7 +147,8 @@ body {
           text-align: center;
           line-height: 50rem / $bastfont;
           font-weight: bold;
-          color:#ff5151 ;
+          color: #ff5151;
+          font-size: 14rem / $bastfont;
         }
       }
     }

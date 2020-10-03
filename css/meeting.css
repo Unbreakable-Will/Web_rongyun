@@ -779,11 +779,11 @@ body {
   margin-right: 0.05208rem;
   width: 0.39062rem;
   height: 0.15625rem;
+  font-size: 0.10938rem;
 }
 
 .main .left .left-top .right1:hover {
   background-color: #edeff2;
-  font-size: 0.10938rem;
 }
 
 .main .left .left-top .right2 {
@@ -822,8 +822,9 @@ body {
 }
 
 .main .left .left-center .bottom-key .box i {
-  margin-top: 0.05208rem;
-  margin-left: -30px;
+  margin-top: 0.08333rem;
+  margin-left: -0.13542rem;
+  margin-right: 0.13542rem;
   width: 0rem;
   height: 0rem;
   border: 0.02604rem solid #000;
@@ -835,18 +836,17 @@ body {
 .main .left .left-center .bottom-key .box .key {
   width: 0.52083rem;
   height: 0.39062rem;
-  font-size: 12px;
-  margin-left: 50px;
+  font-size: 0.0625rem;
 }
 
 .main .left .left-center .bottom-key .box .key .text {
   text-align: center;
-  margin-top: 10px;
-  margin-left: -10px;
+  margin-top: 0.05208rem;
+  margin-left: -0.05208rem;
 }
 
 .main .left .left-center .bottom-key .box .key span {
-  margin-left: 30px;
+  margin-left: 0.15625rem;
   display: block;
   font-size: 0.13542rem;
 }
@@ -861,6 +861,7 @@ body {
   line-height: 0.26042rem;
   font-weight: bold;
   color: #ff5151;
+  font-size: 0.07292rem;
 }
 
 .main .right {
