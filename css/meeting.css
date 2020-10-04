@@ -755,6 +755,9 @@ body {
   margin-left: 0.04167rem;
   line-height: 0.15625rem;
   text-align: center;
+}
+
+.main .left .left-top .icon span {
   font-size: 0.08333rem;
 }
 

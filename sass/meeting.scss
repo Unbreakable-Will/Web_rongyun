@@ -13,7 +13,6 @@ body {
   width: 1920rem / $bastfont;
   background-color: #fafafa;
 
-  //   border-bottom: 1rem / $bastfont solid #ced0d2;
   .center {
     text-align: center;
     line-height: 61rem / $bastfont;
@@ -26,7 +25,6 @@ body {
   align-items: center;
   width: 1920rem / $bastfont;
   height: 855rem / $bastfont;
-  //   float: left;
   border-bottom: 1rem / $bastfont solid #dedede;
   .left {
     width: 1460rem / $bastfont;
@@ -50,7 +48,9 @@ body {
         margin-left: 8rem / $bastfont;
         line-height: 30rem / $bastfont;
         text-align: center;
-        font-size: 16rem / $bastfont;
+        span {
+          font-size: 16rem / $bastfont;
+        }
       }
       .icon:hover {
         background-color: #e0e2e5;
@@ -87,41 +87,28 @@ body {
       .bottom-key {
         height: 90rem / $bastfont;
         width: 1460rem / $bastfont;
-        // background-color: pink;
         display: flex;
         align-items: center;
         align-self: flex-end;
-        // justify-content: flex-start;
         .box {
           display: flex;
           width: 990rem / $bastfont;
           height: 75rem / $bastfont;
-          //   justify-content: center;
-          //   background-color: red;
-          //   justify-content: space-evenly;
           i {
-              margin-top: 16rem / $bastfont;
-              margin-left: -26rem / $bastfont;
-              margin-right: 26rem / $bastfont;
+            margin-top: 16rem / $bastfont;
+            margin-left: -26rem / $bastfont;
+            margin-right: 26rem / $bastfont;
             width: 0rem / $bastfont;
             height: 0rem / $bastfont;
             border: 5rem / $bastfont solid #000;
-            // border-bottom-color: transparent;
             border-left-color: transparent;
             border-right-color: transparent;
             border-top-color: transparent;
           }
           .key {
-            //  flex:1;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-
             width: 100rem / $bastfont;
             height: 75rem / $bastfont;
-            // background-color: skyblue;
             font-size: 12rem / $bastfont;
-            // margin-left: 50rem / $bastfont;
 
             .text {
               text-align: center;
@@ -129,12 +116,9 @@ body {
               margin-left: -10rem / $bastfont;
             }
             span {
-              // margin: 0 auto;
               margin-left: 30rem / $bastfont;
-              //   margin-top: 10px;
               display: block;
               font-size: 26rem / $bastfont;
-              // font-size: 26px;
             }
           }
         }
