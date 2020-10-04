@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/meeting.css">
     <script src="./lib/jquery-2.0.min.js"></script>
     <script src="./lib/flexible.js"></script>
+    <!-- <script src="//cdn.ronghub.com/RongRTC.3.0.3.js"></script>
+    <script src="//cdn.ronghub.com/RongIMLib-2.5.4.js"></script>
+    <script src="lib/RongCallLib.3.1.2.js"></script> -->
 </head>
 
 <body>
@@ -21,7 +24,7 @@
                     <span class="iconfont icon-icon"></span>
                 </div>
                 <div class="icon left2">
-                    <span class="iconfont icon-anquan"></span>
+                    <span class="iconfont icon-anquan" title='会议加密已保护'></span>
                 </div>
                 <div class="icon left3">
                     <span class="iconfont icon-wangluo-"></span>
@@ -71,21 +74,92 @@
             </div>
         </div>
         <div class="right">
-            <div class="top"> 聊天 </div>
-            <div class="center"></div>
-            <div class="bottom">
-                <div class="bottom-top">
-                    <div class="top-text"> 发送至: <span>所有人 <div class="corner"></div></span>
-                    </div>
-                    <div class="power"> 聊天权限<div class="corner"></div>
-                    </div>
+            <div class="member">
+                <div class="member-top"> 成员(1)人 </div>
+                <div class="member-search">
+                    <input type="text" placeholder="搜索成员">
                 </div>
-                <div class="bottom-text">
-                    <textarea placeholder="请输入消息..."></textarea>
+                <ul class="member-list">
+                    <li>
+                        <div class="member-icon">
+                            <img src="http://hd215.api.yesapi.cn/?s=Ext.Avatar.Show&app_key=BA6BBB3D9C90B515C6CAF6310D2BFFB4&nickname=叶良辰"
+                                alt="">
+                        </div>
+                        <div class="member-name"> 叶良辰 <div class="job">(主持人 , 我)</div>
+                        </div>
+                        <div class="status">
+                            <div class="mute"> 解除静音 </div>
+                            <div class="rename"> 改名 </div>
+                            <span class="iconfont icon-yuyinhuatong"></span>
+                            <span class="iconfont icon-shipin"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="member-icon">
+                            <img src="http://hd215.api.yesapi.cn/?s=Ext.Avatar.Show&app_key=BA6BBB3D9C90B515C6CAF6310D2BFFB4&nickname=龙傲天"
+                                alt="">
+                        </div>
+                        <div class="member-name"> 龙傲天 <div class="job">(主持人 , 我)</div>
+                        </div>
+                        <div class="status">
+                            <div class="mute"> 解除静音 </div>
+                            <div class="rename"> 改名 </div>
+                            <span class="iconfont icon-yuyinhuatong"></span>
+                            <span class="iconfont icon-shipin"></span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="member-btn">
+                    <div class="mute-all"> 全体静音 </div>
+                    <div class="remmute-all">解除全体静音 </div>
+                    <div class="more">更多 <i></i></div>
+                </div>
+            </div>
+            <div class="chat">
+                <div class="top"> 聊天 </div>
+                <div class="center"></div>
+                <div class="bottom">
+                    <div class="bottom-top">
+                        <div class="top-text"> 发送至: <span>所有人 <div class="corner"></div></span>
+                        </div>
+                        <div class="power"> 聊天权限<div class="corner"></div>
+                        </div>
+                    </div>
+                    <div class="bottom-text">
+                        <textarea placeholder="请输入消息..."></textarea>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="left1-click">
+        <div class="title"> 唐基炜的会议 </div>
+        <div class="title-main">会议号: </div>
+        <span class="meetingID">123456</span>
+        <div class="title-main">主持人: </div>
+        <span class="compere">唐基炜</span>
+        <div class="title-main">邀请链接: </div>
+        <span class="invite"> https://meeting.com </span>
+        <div class="title-main">参会者ID: </div>
+        <span class="userID">351545</span>
+    </div>
+    <div class="key7-click">
+        <div class="doc">文档(1)</div>
+        <div class="set">设置</div>
+    </div>
+    <div class="key4-click">
+        <div class="manage">
+            <ul>
+                <li><span class="iconfont icon-guanli"></span>会议管理</li>
+                <li><span class=""></span> 锁定会议</li>
+                <li><span class=""></span> 开启等候室</li>
+                <li><span class=""></span> 隐藏会议号和密码</li>
+            </ul>
+        </div>
+        <div class="attendee"></div>
+        <div class="rec"></div>
+    </div> 
+    
 </body>
 <script src="./js/meeting.js"></script>
 
