@@ -1,6 +1,8 @@
 $(function () {
   $("body").click(function () {
     $(".key7-click").hide();
+    $(".key4-click").hide();
+    $(".share").hide();
   });
   $(".left1").mouseover(function () {
     $(".left1-click").show();
@@ -14,7 +16,7 @@ $(function () {
   $(".key7").click(function (e) {
     e.stopPropagation();
     console.log(111);
-    $(".key7-click").show();
+    $(".key7-click").toggle();
   });
 
   $(".key6").click(function () {
@@ -23,13 +25,13 @@ $(function () {
     if ($(".member").css("display") == "none") {
       var num = 608 / 192;
       $(".chat .center").css("height", num + "rem");
-      var num2 = 150 / 192;
-      
+      var num2 = 140 / 192;
+
       $(".chat .bottom-text ").css("height", num2 + "rem");
     } else {
       var num = 183 / 192;
       $(".chat .center").css("height", num + "rem");
-      var num2 = 120 / 192;
+      var num2 = 110 / 192;
       $(".chat .bottom-text ").css("height", num2 + "rem");
     }
   });
@@ -42,4 +44,23 @@ $(function () {
     $(this).find(".status div").hide();
     $(this).find(".status span").show();
   });
+
+  $("textarea").bind("input propertychange", function () {
+    if ($("textarea").val() != "") {
+      $(".bottom-text>span").addClass("fasong");
+    } else {
+      $(".bottom-text>span").removeClass("fasong");
+    }
+  });
+
+  $(".key4").click(function (e) {
+    e.stopPropagation();
+    $(".key4-click").toggle();
+  });
+  $(".key3")
+    .next()
+    .click(function (e) {
+      e.stopPropagation();
+      $(".share").toggle();
+    });
 });

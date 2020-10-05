@@ -1,9 +1,6 @@
 @import "./commont";
 $bastfont: 192;
-html,
-body {
-  // font-size: 192px !important;
-}
+
 .top {
   display: flex;
   justify-content: center;
@@ -90,19 +87,26 @@ body {
         align-items: center;
         align-self: flex-end;
         .box {
+          position: relative;
           display: flex;
           width: 990rem / $bastfont;
           height: 75rem / $bastfont;
           i {
-            margin-top: 26rem / $bastfont;
-            margin-left: -28rem / $bastfont;
-            margin-right: 28rem / $bastfont;
+            position: absolute;
+            left: 70px;
+            top: -38px;
             width: 0rem / $bastfont;
-            height: 0rem / $bastfont;
+            height: 75rem / $bastfont;
             border: 5rem / $bastfont solid #000;
             border-left-color: transparent;
             border-right-color: transparent;
             border-top-color: transparent;
+          }
+          i:nth-child(4) {
+            left: 180px;
+          }
+          i:nth-child(6) {
+            left: 280px;
           }
           .key:hover {
             background-color: #e0e2e5;
@@ -138,9 +142,9 @@ body {
           color: #ff5151;
           font-size: 14rem / $bastfont;
         }
-        .end:hover{
-            color: #fff;
-            background-color:#ff5151 ;
+        .end:hover {
+          color: #fff;
+          background-color: #ff5151;
         }
       }
     }
@@ -272,6 +276,7 @@ body {
           margin-top: 15rem / $bastfont;
           margin-right: 32rem / $bastfont;
           i {
+            // float: right;
             //    float: left;
             display: inline-block;
             // margin-top: 26rem / $bastfont;
@@ -284,7 +289,6 @@ body {
             border-right-color: transparent;
             border-bottom-color: transparent;
             margin-top: 6rem / $bastfont;
-            float: right;
           }
         }
         div:hover {
@@ -358,16 +362,40 @@ body {
         .bottom-text {
           width: 450rem / $bastfont;
           height: 140rem / $bastfont;
+          padding: 4rem / $bastfont;
           textarea {
             margin: 0rem / $bastfont;
             width: 100%;
             height: 100%;
-            // height: 100px;
+            // height: 100rem / $bastfont;
 
             border: none;
             outline: none;
             font-size: 12rem / $bastfont;
             resize: none;
+          }
+          .fasong {
+            color: #006fff;
+          }
+          span {
+            float: right;
+            color: #888888;
+            font-size: 12rem / $bastfont;
+            margin-right: 20rem / $bastfont;
+            // margin-bottom: 4rem / $bastfont;
+            // border-right: 1px solid #ccc;
+            t {
+              color: #888888;
+            }
+            span {
+              color: #888888;
+              line-height: 5rem / $bastfont;
+              margin-left: 10rem / $bastfont;
+              padding-left: 10rem / $bastfont;
+              margin-top: 7rem / $bastfont;
+              //   border-left: 1px solid #ccc;
+              font-size: 12rem / $bastfont;
+            }
           }
         }
       }
@@ -431,8 +459,94 @@ body {
   background-color: #fff;
   box-shadow: 2rem / $bastfont 2rem / $bastfont 5rem / $bastfont #888888;
   padding-top: 10rem / $bastfont;
+  li:first-child {
+    color: #c9cbcc;
+  }
   li {
+    text-align: left;
+    line-height: 24rem / $bastfont;
+    font-size: 12rem / $bastfont;
+
     span {
+      display: inline-block;
+      font-size: 12rem / $bastfont;
+      width: 20rem / $bastfont;
+      margin: 0 10rem / $bastfont;
+    }
+  }
+}
+.share {
+  display: none;
+  position: absolute;
+  left: 200px;
+  bottom: 105px;
+  width: 170rem / $bastfont;
+  height: 100rem / $bastfont;
+  background-color: #fff;
+  box-shadow: -1px -1px 15px #888888;
+  padding-top: 10rem / $bastfont;
+  i {
+    position: absolute;
+    width: 0rem / $bastfont;
+    height: 0rem / $bastfont;
+    border: 10rem / $bastfont solid #fff;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    left: 50%;
+    margin-left: -10px;
+    bottom: -20px;
+  }
+  li:first-child {
+    color: #c9cbcc;
+  }
+  li {
+    text-align: left;
+    line-height: 24rem / $bastfont;
+    font-size: 12rem / $bastfont;
+
+    span {
+      display: inline-block;
+      font-size: 12rem / $bastfont;
+      width: 20rem / $bastfont;
+      margin: 0 10rem / $bastfont;
+    }
+  }
+}
+.camera {
+//   display: none;
+  position: absolute;
+  left: 200px;
+  bottom: 105px;
+  width: 170rem / $bastfont;
+  height: 100rem / $bastfont;
+  background-color: #fff;
+  box-shadow: -1px -1px 15px #888888;
+  padding-top: 10rem / $bastfont;
+  i {
+    position: absolute;
+    width: 0rem / $bastfont;
+    height: 0rem / $bastfont;
+    border: 10rem / $bastfont solid #fff;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    left: 50%;
+    margin-left: -10px;
+    bottom: -20px;
+  }
+  li:first-child {
+    color: #c9cbcc;
+  }
+  li {
+    text-align: left;
+    line-height: 24rem / $bastfont;
+    font-size: 12rem / $bastfont;
+
+    span {
+      display: inline-block;
+      font-size: 12rem / $bastfont;
+      width: 20rem / $bastfont;
       margin: 0 10rem / $bastfont;
     }
   }
