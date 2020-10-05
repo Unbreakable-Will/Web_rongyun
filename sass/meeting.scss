@@ -65,7 +65,14 @@ $bastfont: 192;
         margin-right: 10rem / $bastfont;
         width: 75rem / $bastfont;
         height: 30rem / $bastfont;
-        font-size: 21rem / $bastfont;
+        font-size: 12rem / $bastfont;
+        padding-left: 4px;
+        div,span{
+            float: left;
+        }
+        span{
+            margin: 0 4px;
+        }
       }
       .right1:hover {
         background-color: #edeff2;
@@ -311,6 +318,7 @@ $bastfont: 192;
       }
     }
     .chat {
+        display: block !important;
       float: left;
       width: 460rem / $bastfont;
       height: 855rem / $bastfont;

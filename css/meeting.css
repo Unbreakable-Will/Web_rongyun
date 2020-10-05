@@ -776,7 +776,16 @@ body {
   margin-right: 0.05208rem;
   width: 0.39062rem;
   height: 0.15625rem;
-  font-size: 0.10938rem;
+  font-size: 0.0625rem;
+  padding-left: 4px;
+}
+
+.main .left .left-top .right1 div, .main .left .left-top .right1 span {
+  float: left;
+}
+
+.main .left .left-top .right1 span {
+  margin: 0 4px;
 }
 
 .main .left .left-top .right1:hover {
@@ -1054,6 +1063,7 @@ body {
 }
 
 .main .right .chat {
+  display: block !important;
   float: left;
   width: 2.39583rem;
   height: 4.45312rem;
