@@ -789,12 +789,36 @@ body {
 }
 
 .main .left .left-center {
+  position: relative;
   width: 100%;
   height: 4.24479rem;
   background-color: #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.main .left .left-center .touxiang {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 250px;
+  left: 650px;
+}
+
+.main .left .left-center .touxiang img {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+.main .left .left-center .touxiang .member-name {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
 }
 
 .main .left .left-center .bottom-key {
@@ -815,6 +839,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 50px;
   width: 5.15625rem;
   height: 0.39062rem;
 }
@@ -980,7 +1005,7 @@ body {
   text-align: center;
 }
 
-.main .right .member .member-list li .status .mute {
+.main .right .member .member-list li .status .status-mute {
   width: 0.3125rem;
   height: 0.125rem;
   margin-right: 0.10417rem;
@@ -1151,7 +1176,7 @@ body {
   font-size: 0.0625rem;
 }
 
-.left1-click {
+.box-click .left1-click {
   display: none;
   width: 2.16146rem;
   height: 0.91146rem;
@@ -1164,27 +1189,27 @@ body {
           box-shadow: 0.01042rem 0.01042rem 0.02604rem #888888;
 }
 
-.left1-click .title {
+.box-click .left1-click .title {
   margin-top: 0.07292rem;
   font-size: 0.0625rem;
   font-weight: bold;
   margin-bottom: 0.05208rem;
 }
 
-.left1-click .title-main {
+.box-click .left1-click .title-main {
   font-size: 0.0625rem;
   color: #cecece;
   margin-bottom: 0.05208rem;
 }
 
-.left1-click span {
+.box-click .left1-click span {
   position: absolute;
   left: 0.52083rem;
   color: #000;
   margin-top: -0.13542rem;
 }
 
-.key7-click {
+.box-click .key7-click {
   display: none;
   position: absolute;
   bottom: 0.625rem;
@@ -1196,16 +1221,16 @@ body {
   background-color: #fff;
 }
 
-.key7-click div {
+.box-click .key7-click div {
   line-height: 0.13542rem;
   font-size: 0.0625rem;
   margin-left: 0.10417rem;
 }
 
-.key4-click {
+.box-click .key4-click {
   display: none;
   position: absolute;
-  left: 1.45833rem;
+  left: 1.5625rem;
   bottom: 0.625rem;
   width: 0.88542rem;
   height: 1.71875rem;
@@ -1215,27 +1240,27 @@ body {
   padding-top: 0.05208rem;
 }
 
-.key4-click li:first-child {
+.box-click .key4-click li:first-child {
   color: #c9cbcc;
 }
 
-.key4-click li {
+.box-click .key4-click li {
   text-align: left;
   line-height: 0.125rem;
   font-size: 0.0625rem;
 }
 
-.key4-click li span {
+.box-click .key4-click li span {
   display: inline-block;
   font-size: 0.0625rem;
   width: 0.10417rem;
   margin: 0 0.05208rem;
 }
 
-.share {
+.box-click .share {
   display: none;
   position: absolute;
-  left: 200px;
+  left: 248px;
   bottom: 105px;
   width: 0.88542rem;
   height: 0.52083rem;
@@ -1245,7 +1270,7 @@ body {
   padding-top: 0.05208rem;
 }
 
-.share i {
+.box-click .share i {
   position: absolute;
   width: 0rem;
   height: 0rem;
@@ -1258,36 +1283,37 @@ body {
   bottom: -20px;
 }
 
-.share li:first-child {
+.box-click .share li:first-child {
   color: #c9cbcc;
 }
 
-.share li {
+.box-click .share li {
   text-align: left;
   line-height: 0.125rem;
   font-size: 0.0625rem;
 }
 
-.share li span {
+.box-click .share li span {
   display: inline-block;
   font-size: 0.0625rem;
   width: 0.10417rem;
   margin: 0 0.05208rem;
 }
 
-.camera {
+.box-click .camera {
+  display: none;
   position: absolute;
-  left: 200px;
+  left: 124px;
   bottom: 105px;
-  width: 0.88542rem;
-  height: 0.52083rem;
+  width: 1.14583rem;
+  height: 0.67708rem;
   background-color: #fff;
   -webkit-box-shadow: -1px -1px 15px #888888;
           box-shadow: -1px -1px 15px #888888;
   padding-top: 0.05208rem;
 }
 
-.camera i {
+.box-click .camera i {
   position: absolute;
   width: 0rem;
   height: 0rem;
@@ -1300,17 +1326,60 @@ body {
   bottom: -20px;
 }
 
-.camera li:first-child {
-  color: #c9cbcc;
+.box-click .camera li:first-child {
+  color: #939699;
 }
 
-.camera li {
+.box-click .camera li {
   text-align: left;
   line-height: 0.125rem;
   font-size: 0.0625rem;
 }
 
-.camera li span {
+.box-click .camera li span {
+  display: inline-block;
+  font-size: 0.0625rem;
+  width: 0.10417rem;
+  margin: 0 0.05208rem;
+}
+
+.box-click .mute {
+  display: none;
+  position: absolute;
+  left: 15px;
+  bottom: 105px;
+  width: 1.14583rem;
+  height: 1.45833rem;
+  background-color: #fff;
+  -webkit-box-shadow: -1px -1px 15px #888888;
+          box-shadow: -1px -1px 15px #888888;
+  padding-top: 0.05208rem;
+}
+
+.box-click .mute i {
+  position: absolute;
+  width: 0rem;
+  height: 0rem;
+  border: 0.05208rem solid #fff;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  left: 50%;
+  margin-left: -10px;
+  bottom: -20px;
+}
+
+.box-click .mute li:first-child {
+  color: #939699;
+}
+
+.box-click .mute li {
+  text-align: left;
+  line-height: 0.125rem;
+  font-size: 0.0625rem;
+}
+
+.box-click .mute li span {
   display: inline-block;
   font-size: 0.0625rem;
   width: 0.10417rem;

@@ -1,9 +1,20 @@
 $(function () {
-  $("body").click(function () {
-    $(".key7-click").hide();
-    $(".key4-click").hide();
-    $(".share").hide();
-  });
+    $("body").click(function () {
+      $(".key7-click").hide();
+      $(".key4-click").hide();
+      $(".share").hide();
+      $(".camera").hide();
+      $(".mute").hide();
+
+    });
+
+  $(".box-click")
+    .children()
+    .click(function (e) {
+      e.stopPropagation();
+
+      console.log($(this));
+    });
   $(".left1").mouseover(function () {
     $(".left1-click").show();
     console.log(111);
@@ -16,11 +27,11 @@ $(function () {
   $(".key7").click(function (e) {
     e.stopPropagation();
     console.log(111);
-    $(".key7-click").toggle();
+    $(".key7-click").toggle().siblings().hide();
   });
 
   $(".key6").click(function () {
-    $(".member").toggle();
+    $(".member").toggle().siblings().hide();
     console.log($(".member").css("display") == "none");
     if ($(".member").css("display") == "none") {
       var num = 608 / 192;
@@ -55,12 +66,24 @@ $(function () {
 
   $(".key4").click(function (e) {
     e.stopPropagation();
-    $(".key4-click").toggle();
+    $(".key4-click").toggle().siblings().hide();
   });
   $(".key3")
     .next()
     .click(function (e) {
       e.stopPropagation();
-      $(".share").toggle();
+      $(".share").toggle().siblings().hide();
+    });
+  $(".key2")
+    .next()
+    .click(function (e) {
+      e.stopPropagation();
+      $(".camera").toggle().siblings().hide();
+    });
+  $(".key1")
+    .next()
+    .click(function (e) {
+      e.stopPropagation();
+      $(".mute").toggle().siblings().hide();
     });
 });
