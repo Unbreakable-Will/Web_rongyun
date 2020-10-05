@@ -83,23 +83,14 @@ $bastfont: 192;
       display: flex;
 
       .touxiang {
-        width: 120px;
-        height: 120px;
+        width: 106rem / $bastfont;
+        height: 130rem / $bastfont;
         position: absolute;
-        top: 250px;
-        left: 650px;
-        img {
-          position: absolute;
-  
-          left: 50%;
-          transform: translate(-50%, -0%);
-        }
+        top: 250rem / $bastfont;
+        left: 650rem / $bastfont;
         .member-name {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-          transform: translate(-50%, -0%);
-
+          text-align: center;
+          line-height: 30rem / $bastfont;
         }
       }
       .bottom-key {
@@ -111,13 +102,13 @@ $bastfont: 192;
         .box {
           position: relative;
           display: flex;
-          margin-left: 50px;
+          margin-left: 50rem / $bastfont;
           width: 990rem / $bastfont;
           height: 75rem / $bastfont;
           i {
             position: absolute;
-            left: 70px;
-            top: -38px;
+            left: 70rem / $bastfont;
+            top: -38rem / $bastfont;
             width: 0rem / $bastfont;
             height: 75rem / $bastfont;
             border: 5rem / $bastfont solid #000;
@@ -126,10 +117,10 @@ $bastfont: 192;
             border-top-color: transparent;
           }
           i:nth-child(4) {
-            left: 180px;
+            left: 180rem / $bastfont;
           }
           i:nth-child(6) {
-            left: 280px;
+            left: 280rem / $bastfont;
           }
           .key:hover {
             background-color: #e0e2e5;
@@ -502,8 +493,8 @@ $bastfont: 192;
   .share {
     display: none;
     position: absolute;
-    left: 248px;
-    bottom: 105px;
+    left: 248rem / $bastfont;
+    bottom: 105rem / $bastfont;
     width: 170rem / $bastfont;
     height: 100rem / $bastfont;
     background-color: #fff;
@@ -518,8 +509,8 @@ $bastfont: 192;
       border-right-color: transparent;
       border-bottom-color: transparent;
       left: 50%;
-      margin-left: -10px;
-      bottom: -20px;
+      margin-left: -10rem / $bastfont;
+      bottom: -20rem / $bastfont;
     }
     li:first-child {
       color: #c9cbcc;
@@ -540,8 +531,8 @@ $bastfont: 192;
   .camera {
     display: none;
     position: absolute;
-    left: 124px;
-    bottom: 105px;
+    left: 124rem / $bastfont;
+    bottom: 105rem / $bastfont;
     width: 220rem / $bastfont;
     height: 130rem / $bastfont;
     background-color: #fff;
@@ -556,8 +547,8 @@ $bastfont: 192;
       border-right-color: transparent;
       border-bottom-color: transparent;
       left: 50%;
-      margin-left: -10px;
-      bottom: -20px;
+      margin-left: -10rem / $bastfont;
+      bottom: -20rem / $bastfont;
     }
     li:first-child {
       color: #939699;
@@ -578,8 +569,8 @@ $bastfont: 192;
   .mute {
     display: none;
     position: absolute;
-    left: 15px;
-    bottom: 105px;
+    left: 15rem / $bastfont;
+    bottom: 105rem / $bastfont;
     width: 220rem / $bastfont;
     height: 280rem / $bastfont;
     background-color: #fff;
@@ -594,8 +585,8 @@ $bastfont: 192;
       border-right-color: transparent;
       border-bottom-color: transparent;
       left: 50%;
-      margin-left: -10px;
-      bottom: -20px;
+      margin-left: -10rem / $bastfont;
+      bottom: -20rem / $bastfont;
     }
     li:first-child {
       color: #939699;

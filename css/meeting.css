@@ -799,26 +799,16 @@ body {
 }
 
 .main .left .left-center .touxiang {
-  width: 120px;
-  height: 120px;
+  width: 0.55208rem;
+  height: 0.67708rem;
   position: absolute;
-  top: 250px;
-  left: 650px;
-}
-
-.main .left .left-center .touxiang img {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  top: 1.30208rem;
+  left: 3.38542rem;
 }
 
 .main .left .left-center .touxiang .member-name {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  text-align: center;
+  line-height: 0.15625rem;
 }
 
 .main .left .left-center .bottom-key {
@@ -839,15 +829,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 50px;
+  margin-left: 0.26042rem;
   width: 5.15625rem;
   height: 0.39062rem;
 }
 
 .main .left .left-center .bottom-key .box i {
   position: absolute;
-  left: 70px;
-  top: -38px;
+  left: 0.36458rem;
+  top: -0.19792rem;
   width: 0rem;
   height: 0.39062rem;
   border: 0.02604rem solid #000;
@@ -857,11 +847,11 @@ body {
 }
 
 .main .left .left-center .bottom-key .box i:nth-child(4) {
-  left: 180px;
+  left: 0.9375rem;
 }
 
 .main .left .left-center .bottom-key .box i:nth-child(6) {
-  left: 280px;
+  left: 1.45833rem;
 }
 
 .main .left .left-center .bottom-key .box .key:hover {
@@ -1260,8 +1250,8 @@ body {
 .box-click .share {
   display: none;
   position: absolute;
-  left: 248px;
-  bottom: 105px;
+  left: 1.29167rem;
+  bottom: 0.54688rem;
   width: 0.88542rem;
   height: 0.52083rem;
   background-color: #fff;
@@ -1279,8 +1269,8 @@ body {
   border-right-color: transparent;
   border-bottom-color: transparent;
   left: 50%;
-  margin-left: -10px;
-  bottom: -20px;
+  margin-left: -0.05208rem;
+  bottom: -0.10417rem;
 }
 
 .box-click .share li:first-child {
@@ -1303,8 +1293,8 @@ body {
 .box-click .camera {
   display: none;
   position: absolute;
-  left: 124px;
-  bottom: 105px;
+  left: 0.64583rem;
+  bottom: 0.54688rem;
   width: 1.14583rem;
   height: 0.67708rem;
   background-color: #fff;
@@ -1322,8 +1312,8 @@ body {
   border-right-color: transparent;
   border-bottom-color: transparent;
   left: 50%;
-  margin-left: -10px;
-  bottom: -20px;
+  margin-left: -0.05208rem;
+  bottom: -0.10417rem;
 }
 
 .box-click .camera li:first-child {
@@ -1346,8 +1336,8 @@ body {
 .box-click .mute {
   display: none;
   position: absolute;
-  left: 15px;
-  bottom: 105px;
+  left: 0.07812rem;
+  bottom: 0.54688rem;
   width: 1.14583rem;
   height: 1.45833rem;
   background-color: #fff;
@@ -1365,8 +1355,8 @@ body {
   border-right-color: transparent;
   border-bottom-color: transparent;
   left: 50%;
-  margin-left: -10px;
-  bottom: -20px;
+  margin-left: -0.05208rem;
+  bottom: -0.10417rem;
 }
 
 .box-click .mute li:first-child {

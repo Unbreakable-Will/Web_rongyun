@@ -1,12 +1,11 @@
 $(function () {
-    $("body").click(function () {
-      $(".key7-click").hide();
-      $(".key4-click").hide();
-      $(".share").hide();
-      $(".camera").hide();
-      $(".mute").hide();
-
-    });
+  $("body").click(function () {
+    $(".key7-click").hide();
+    $(".key4-click").hide();
+    $(".share").hide();
+    $(".camera").hide();
+    $(".mute").hide();
+  });
 
   $(".box-click")
     .children()
@@ -86,4 +85,17 @@ $(function () {
       e.stopPropagation();
       $(".mute").toggle().siblings().hide();
     });
+
+  var pal = $("textarea").attr("placeholder");
+  $("textarea").keydown(function (e) {
+    if (e.keyCode == 13) {
+      $("textarea")
+        .val("")
+        .replace(/[\r\n]/g, "");
+      //   console.log(pal);
+      //   $("textarea").blur();
+      $("textarea").attr("placeholder", pal);
+    }
+    // $("textarea").focus();
+  });
 });
