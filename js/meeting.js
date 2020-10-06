@@ -33,16 +33,21 @@ $(function () {
     $(".member").toggle().siblings().hide();
     // console.log($(".member").css("display") == "none");
     if ($(".member").css("display") == "none") {
-      var num = 608 / 192;
+      var num = 780 / 192;
       $(".chat .center").css("height", num + "rem");
-      var num2 = 140 / 192;
+      var num2 = 600 / 192;
+      $(".chat .center ").css("height", num2 + "rem");
+      var num3 = 150 / 192;
+    //   $(".chat .bottom-text ").css("height", num3 + "rem");
+      $(".chat textarea").css("height", num3 + "rem");
 
-      $(".chat .bottom-text ").css("height", num2 + "rem");
+      console.log(111);
     } else {
-      var num = 183 / 192;
+      var num = 300 / 192;
       $(".chat .center").css("height", num + "rem");
-      var num2 = 110 / 192;
-      $(".chat .bottom-text ").css("height", num2 + "rem");
+      var num2 = 130 / 192;
+      $(".chat textarea").css("height", num2 + "rem");
+      console.log(222);
     }
   });
 
@@ -89,19 +94,14 @@ $(function () {
       $(".mute").toggle().siblings().hide();
     });
 
-  var pal = $("textarea").attr("placeholder");
   $("textarea").keydown(function (e) {
     if (e.keyCode == 13) {
-      $("textarea")
-        .val("")
-        .replace(/[\r\n]/g, "");
-      //   console.log(pal);
-      //   $("textarea").blur();
-      $("textarea").attr("placeholder", pal);
+      $("textarea").val("");
     }
-    // $("textarea").focus();
   });
-
+  $("textarea").blur(function () {
+    $("textarea").val("");
+  });
   // 定时器
 
   var divHour = $("#divHour"); //时
@@ -113,8 +113,6 @@ $(function () {
     var txtHour = +divHour.text(); //转成number类型
     var txtMin = +divMin.text();
     var txtSec = +divSec.text();
-    console.log(txtHour);
-    console.log(txtMin);
     // console.log(+txtSec++);
     //2.2 把这个文本修改
     txtSec++;

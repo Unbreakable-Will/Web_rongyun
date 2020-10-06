@@ -382,6 +382,9 @@
 //  初始化文件开始
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  //   position: 0px ;
 }
 article,
 aside,
@@ -697,3 +700,4 @@ body {
 }
 
 //  初始化文件结束
+
