@@ -690,6 +690,10 @@ body {
   min-width: 1280px;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 .container-fluid {
   border: 1px solid #dedede;
   height: 100%;
@@ -1137,6 +1141,7 @@ body {
   padding-left: 0.08333rem;
   -webkit-box-shadow: 0.01042rem 0.01042rem 0.02604rem #888888;
           box-shadow: 0.01042rem 0.01042rem 0.02604rem #888888;
+  font-size: 0.0625rem;
 }
 
 .box-click .left1-click .title {
@@ -1156,7 +1161,7 @@ body {
   position: absolute;
   left: 0.52083rem;
   color: #000;
-  margin-top: -0.13542rem;
+  margin-top: -0.15625rem;
 }
 
 .box-click .key7-click {

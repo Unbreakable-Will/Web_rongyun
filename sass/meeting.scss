@@ -1,5 +1,8 @@
 @import "./commont";
 $bastfont: 192;
+.cursor {
+  cursor: pointer;
+}
 
 .container-fluid {
   border: 1px solid #dedede;
@@ -409,6 +412,7 @@ $bastfont: 192;
     top: 80rem / $bastfont;
     padding-left: 16rem / $bastfont;
     box-shadow: 2rem / $bastfont 2rem / $bastfont 5rem / $bastfont #888888;
+    font-size: 12rem / $bastfont;
     .title {
       margin-top: 14rem / $bastfont;
       font-size: 12rem / $bastfont;
@@ -424,7 +428,7 @@ $bastfont: 192;
       position: absolute;
       left: 100rem / $bastfont;
       color: #000;
-      margin-top: -26rem / $bastfont;
+      margin-top: -30rem / $bastfont;
     }
   }
 
