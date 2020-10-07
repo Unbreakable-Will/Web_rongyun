@@ -93,6 +93,7 @@ $bastfont: 192;
               font-size: 14rem / $bastfont;
               text-align: center;
             }
+          
           }
         }
 
@@ -163,7 +164,7 @@ $bastfont: 192;
       padding: 0;
       height: 880rem / $bastfont;
       .member {
-        display: none;
+        // display: none;
         width: 100%;
         height: 322rem / $bastfont;
         margin-bottom: 10rem / $bastfont;
@@ -214,6 +215,12 @@ $bastfont: 192;
               float: left;
               margin-left: 10rem / $bastfont;
               font-size: 12rem / $bastfont;
+            }
+            .job{
+              font-size: 12px;
+              float: left;
+              transform: scale(0.8);
+              
             }
             .status {
               float: right;

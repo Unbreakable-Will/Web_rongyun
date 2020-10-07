@@ -1,19 +1,4 @@
 $(function () {
-  $("body").click(function () {
-    $(".key7-click").hide();
-    $(".key4-click").hide();
-    $(".share").hide();
-    $(".camera").hide();
-    $(".mute").hide();
-  });
-
-  $(".box-click")
-    .children()
-    .click(function (e) {
-      e.stopPropagation();
-
-      console.log($(this));
-    });
   $(".left1").mouseover(function () {
     $(".left1-click").show();
     console.log(111);
@@ -21,12 +6,6 @@ $(function () {
   $(".left1").mouseout(function () {
     console.log(222);
     $(".left1-click").hide();
-  });
-
-  $(".key7").click(function (e) {
-    e.stopPropagation();
-    console.log(111);
-    $(".key7-click").toggle().siblings().hide();
   });
 
   $(".key6").click(function () {
@@ -38,7 +17,7 @@ $(function () {
       var num2 = 600 / 192;
       $(".chat .center ").css("height", num2 + "rem");
       var num3 = 150 / 192;
-    //   $(".chat .bottom-text ").css("height", num3 + "rem");
+      //   $(".chat .bottom-text ").css("height", num3 + "rem");
       $(".chat textarea").css("height", num3 + "rem");
 
       console.log(111);
@@ -60,45 +39,13 @@ $(function () {
     $(this).find(".status span").show();
   });
 
-  $("textarea").bind("input propertychange", function () {
-    if ($("textarea").val() != "") {
-      $(".bottom-text>span").addClass("fasong");
-    } else {
-      $(".bottom-text>span").removeClass("fasong");
-    }
-  });
-
-  $(".key4").click(function (e) {
-    e.stopPropagation();
-    $(".key4-click").toggle().siblings().hide();
-  });
-
-  $(".key3")
-    .next()
-    .click(function (e) {
-      e.stopPropagation();
-      $(".share").toggle().siblings().hide();
-    });
-
-  $(".key2")
-    .next()
-    .click(function (e) {
-      e.stopPropagation();
-      $(".camera").toggle().siblings().hide();
-    });
-
-  $(".key1")
-    .next()
-    .click(function (e) {
-      e.stopPropagation();
-      $(".mute").toggle().siblings().hide();
-    });
-
-  $("textarea").keydown(function (e) {
+  $("textarea").keypress(function (e) {
+    e.preventDefault();
     if (e.keyCode == 13) {
       $("textarea").val("");
     }
   });
+
   $("textarea").blur(function () {
     $("textarea").val("");
   });
@@ -136,4 +83,12 @@ $(function () {
     $("#divMin").text(txtMin);
     $("#divHour").text(txtHour);
   }, 1000);
+
+  //   点击改名
+
+  $(".rename").click(function () {
+    //   console.log(111);
+    $(this).parent().prev();
+    console.log($(this).parent().prev().text());
+  });
 });

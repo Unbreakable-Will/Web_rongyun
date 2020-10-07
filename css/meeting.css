@@ -875,7 +875,6 @@ body {
 }
 
 .container-fluid .row .row-right .member {
-  display: none;
   width: 100%;
   height: 1.67708rem;
   margin-bottom: 0.05208rem;
@@ -936,6 +935,13 @@ body {
   float: left;
   margin-left: 0.05208rem;
   font-size: 0.0625rem;
+}
+
+.container-fluid .row .row-right .member .member-list li .job {
+  font-size: 12px;
+  float: left;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .container-fluid .row .row-right .member .member-list li .status {
