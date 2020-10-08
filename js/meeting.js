@@ -39,16 +39,6 @@ $(function () {
     $(this).find(".status span").show();
   });
 
-  $("textarea").keypress(function (e) {
-    e.preventDefault();
-    if (e.keyCode == 13) {
-      $("textarea").val("");
-    }
-  });
-
-  $("textarea").blur(function () {
-    $("textarea").val("");
-  });
   // 定时器
 
   var divHour = $("#divHour"); //时
@@ -87,8 +77,83 @@ $(function () {
   //   点击改名
 
   $(".rename").click(function () {
-    //   console.log(111);
-    $(this).parent().prev();
-    console.log($(this).parent().prev().text());
+    $(".revise").show();
+    var oldtext = $(this).parent().prev().find(".member-name").text().trim();
+    // console.log($(this).parent().prev().prev().find('img').attr('src'));
+    var img = $(this).parent().prev().prev().find("img");
+    var name = $(this).parent().prev().find(".member-name");
+    var input = $(".revise").find("input");
+    var btn = $(".revise").find("button");
+    input.val(oldtext);
+    // console.log(input);
+    // var flag = true;
+    input.keyup(function () {
+      console.log(input.val().length);
+      var newtext = input.val();
+      if (input.val().length == 0) {
+        btn.css("background-color", "#80b7ff");
+        btn.attr("disabled", true);
+        // flag = false;
+      } else {
+        // flag = true;
+        btn.css("background-color", "#006fff");
+        btn.attr("disabled", false);
+        btn.on("click", function () {
+          $(".revise").hide();
+          name.text(newtext);
+          $(".main .member-name").text(newtext);
+          $(".touxiang img").attr(
+            "src",
+            "http://hd215.api.yesapi.cn/?s=Ext.Avatar.Show&app_key=BA6BBB3D9C90B515C6CAF6310D2BFFB4&nickname=" +
+              newtext
+          );
+          // console.log(
+          img.attr(
+            "src",
+            "http://hd215.api.yesapi.cn/?s=Ext.Avatar.Show&app_key=BA6BBB3D9C90B515C6CAF6310D2BFFB4&nickname=" +
+              newtext
+          );
+          // );
+        });
+      }
+      // console.log(111);
+    });
+    btn.on("click", function () {
+      $(".revise").hide();
+    });
+    $(".revise")
+      .find("span")
+      .click(function () {
+        $(".revise").hide();
+      });
+  });
+});
+
+// 发送消息
+$(function () {
+  var str = "";
+
+  var name = $(".main .member-name").text();
+  var div = document.querySelector(".center");
+  $("textarea").keypress(function (e) {
+    e.preventDefault();
+    var text = $("textarea").val();
+    if (e.keyCode == 13 && text.trim() != "") {
+      var myDate = new Date();
+      var newdate = myDate.toLocaleString();
+      var mytime = myDate.toLocaleTimeString();
+      console.log(newdate);
+      console.log(text);
+      $("textarea").val("");
+      str += `<div class="message">
+      <p class="name">${name}: ${mytime}</p>
+      <p class="">${text}</p>
+    </div>
+      `;
+      $(".chat .center").html(str);
+      console.log(str);
+
+      div.scrollTop = div.scrollHeight;
+    }
   });
 });

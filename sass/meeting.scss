@@ -93,7 +93,6 @@ $bastfont: 192;
               font-size: 14rem / $bastfont;
               text-align: center;
             }
-          
           }
         }
 
@@ -164,7 +163,7 @@ $bastfont: 192;
       padding: 0;
       height: 880rem / $bastfont;
       .member {
-        // display: none;
+        display: none;
         width: 100%;
         height: 322rem / $bastfont;
         margin-bottom: 10rem / $bastfont;
@@ -210,17 +209,28 @@ $bastfont: 192;
                 height: 32rem / $bastfont;
               }
             }
-
-            .member-name {
+            .member-text {
               float: left;
-              margin-left: 10rem / $bastfont;
-              font-size: 12rem / $bastfont;
-            }
-            .job{
-              font-size: 12px;
-              float: left;
-              transform: scale(0.8);
-              
+              position: relative;
+              .member-name {
+                // float: left;
+                // display: inline;
+                margin-left: 10rem / $bastfont;
+                font-size: 12rem / $bastfont;
+                input {
+                  // height: 14px;
+                  font-size: 12px;
+                }
+              }
+              .job {
+                width: 66px;
+                font-size: 12px;
+                // float: left;
+                position: absolute;
+                left: 0;
+                top: 18px;
+                transform: scale(0.8);
+              }
             }
             .status {
               float: right;
@@ -311,6 +321,18 @@ $bastfont: 192;
           width: 100%;
           background-color: #fff;
           border-bottom: 1rem / $bastfont solid #e5e5e5;
+          overflow-x: hidden;
+          overflow-y: auto;
+          .message {
+            // padding: 0;
+            margin: 0;
+            padding-left: 10px;
+            padding-top: 10px;
+            p {
+              padding: 0;
+              margin: 0;
+            }
+          }
         }
         .bottom {
           height: 280rem / $bastfont;
@@ -406,8 +428,6 @@ $bastfont: 192;
 }
 
 .box-click {
-  //   position: relative;
-
   .left1-click {
     display: none;
     // z-index: 111;
@@ -439,6 +459,48 @@ $bastfont: 192;
     }
   }
 
+  .revise {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    margin-left: -150px;
+    margin-top: -100px;
+    background-color: #fff;
+    box-shadow: -2px -2px 10px #ccc;
+    span {
+      float: right;
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+    .revise-title {
+      text-align: center;
+      margin-top: 30px;
+    }
+    input {
+      width: 100%;
+      margin-top: 30px;
+      height: 40px;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+    button {
+      width: 90%;
+      background-color: #006fff;
+      border: none;
+      outline: none;
+      // max-width: 30px;
+      margin-top: 30px;
+      margin-left: 5%;
+      height: 30px;
+      color: #fff;
+    }
+  }
   .key7-click {
     display: none;
     position: absolute;
