@@ -1,3 +1,4 @@
+var div = document.querySelector(".center");
 $(function () {
   $(".left1").mouseover(function () {
     $(".left1-click").show();
@@ -10,6 +11,8 @@ $(function () {
 
   $(".key6").click(function () {
     $(".member").toggle().siblings().hide();
+    div.scrollTop = div.scrollHeight;
+
     // console.log($(".member").css("display") == "none");
     if ($(".member").css("display") == "none") {
       var num = 780 / 192;
@@ -134,11 +137,10 @@ $(function () {
   var str = "";
 
   var name = $(".main .member-name").text();
-  var div = document.querySelector(".center");
   $("textarea").keypress(function (e) {
-    e.preventDefault();
     var text = $("textarea").val();
     if (e.keyCode == 13 && text.trim() != "") {
+      e.preventDefault();
       var myDate = new Date();
       var newdate = myDate.toLocaleString();
       var mytime = myDate.toLocaleTimeString();
